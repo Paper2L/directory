@@ -33,6 +33,8 @@ A basic Python implementation demonstrates how to generate clusters from random 
 ### Gaussian Mixture Models (GMM)
 Gaussian Mixture Models offer a probabilistic approach by assuming that the data is generated from a mixture of several Gaussian distributions. Unlike K-means, GMM provides soft clustering, meaning that each data point is assigned a probability of belonging to each cluster.
 
+![](./GMM.png)
+
 **Key Features:**
 - **Expectation-Maximization (EM) Algorithm:** Iteratively refines the parameters (mean, covariance, and mixing coefficients) of each Gaussian component.
 - **Flexibility:** Clusters can have different shapes and sizes, thanks to various covariance structures.
@@ -43,6 +45,8 @@ A sample implementation in Python illustrates how to fit a GMM to data and visua
 ## Application to Earth Observation Data
 
 ### Image Classification with Sentinel-2
+![](./kms2.png)
+![](./gmms2.png)
 For optical image classification, the workflow includes:
 - **Data Preparation:** Reading and stacking spectral bands (e.g., B2, B3, B4) using libraries like `rasterio`.
 - **Masking and Reshaping:** Creating masks to filter out invalid data and reshaping the data for clustering.
@@ -50,6 +54,14 @@ For optical image classification, the workflow includes:
 - **Visualization:** Displaying the classified images and scatter plots to interpret cluster distributions.
 
 ### Altimetry Classification with Sentinel-3
+![](./sd4ec.png)
+![](./echos.png)
+![](./leadechos.png)
+![](./sea_iceechos.png)
+![](./sp0.png)
+![](./sp.png)
+![](./sp1.png)
+![](./waucc.png)
 Altimetry data requires more extensive pre-processing:
 - **Data Ingestion:** Loading NetCDF files and extracting variables such as latitude, longitude, waveform, and signal intensity.
 - **Feature Extraction:** Computing additional features like *peakiness* and *stack standard deviation (SSD)* to better characterize the data.
