@@ -47,6 +47,7 @@ A sample implementation in Python illustrates how to fit a GMM to data and visua
 ### Image Classification with Sentinel-2
 ![](./kms2.png)
 ![](./gmms2.png)
+
 For optical image classification, the workflow includes:
 - **Data Preparation:** Reading and stacking spectral bands (e.g., B2, B3, B4) using libraries like `rasterio`.
 - **Masking and Reshaping:** Creating masks to filter out invalid data and reshaping the data for clustering.
@@ -54,14 +55,7 @@ For optical image classification, the workflow includes:
 - **Visualization:** Displaying the classified images and scatter plots to interpret cluster distributions.
 
 ### Altimetry Classification with Sentinel-3
-![](./sd4ec.png)
-![](./echos.png)
-![](./lead_echos.png)
-![](./sea_ice_echos.png)
-![](./sp0.png)
-![](./sp.png)
-![](./sp1.png)
-![](./waucc.png)
+
 Altimetry data requires more extensive pre-processing:
 - **Data Ingestion:** Loading NetCDF files and extracting variables such as latitude, longitude, waveform, and signal intensity.
 - **Feature Extraction:** Computing additional features like *peakiness* and *stack standard deviation (SSD)* to better characterize the data.
@@ -70,6 +64,14 @@ Altimetry data requires more extensive pre-processing:
 - **Post-processing and Evaluation:**  
   - **Visualization:** Plotting mean waveforms, scatter plots, and aligned echoes using cross-correlation.
   - **Comparison:** Evaluating the clustering results against official datasets (e.g., adjusting ESA product labels) using confusion matrices.
+![](./sd4ec.png)
+![](./echos.png)
+![](./lead_echos.png)
+![](./sea_ice_echos.png)
+![](./sp0.png)
+![](./sp.png)
+![](./sp1.png)
+![](./waucc.png)
 
 Supporting functions (e.g., `peakiness`, `unpack_gpod`, and `calculate_SSD`) streamline the process of feature computation and data transformation, ensuring that the clustering algorithms work effectively on the EO datasets.
 
