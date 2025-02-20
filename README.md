@@ -68,9 +68,3 @@ This guide provides a comprehensive, practical introduction to using unsupervise
 - Gain deeper insights through advanced feature extraction and visualization techniques.
 
 The step-by-step code examples serve as a starting point for developing robust EO data analysis pipelines, enabling researchers to tackle real-world classification challenges with confidence.
-
-!pip install rasterio netCDF4 scikit-learn matplotlib numpy
-
-# Local environment
-conda create -n eo-clustering python=3.8
-conda install -c conda-forge rasterio netCDF4 scikit-learn matplotlib numpy
