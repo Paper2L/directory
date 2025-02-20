@@ -56,8 +56,8 @@ For optical image classification, the workflow includes:
 ### Altimetry Classification with Sentinel-3
 ![](./sd4ec.png)
 ![](./echos.png)
-![](./leadechos.png)
-![](./sea_iceechos.png)
+![](./lead_echos.png)
+![](./sea_ice_echos.png)
 ![](./sp0.png)
 ![](./sp.png)
 ![](./sp1.png)
