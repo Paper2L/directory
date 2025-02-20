@@ -16,7 +16,7 @@ The practical implementations presented here focus on clustering methods—speci
 
 ## Unsupervised Learning Techniques
 
-### K-means Clustering {cite}macqueen1967some{cite}
+### K-means Clustering
 K-means clustering partitions a dataset into *k* distinct clusters by:
 - **Initialization:** Defining *k* centroids.
 - **Assignment:** Allocating each data point to the nearest centroid based on a distance metric (typically the squared Euclidean distance).
