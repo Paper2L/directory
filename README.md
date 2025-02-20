@@ -22,6 +22,8 @@ K-means clustering partitions a dataset into *k* distinct clusters by:
 - **Assignment:** Allocating each data point to the nearest centroid based on a distance metric (typically the squared Euclidean distance).
 - **Update:** Recalculating centroids as the mean of the data points assigned to each cluster.
 
+![](./kmeans.png)
+
 **Key Advantages:**
 - **Simplicity and Scalability:** Easy to implement and computationally efficient.
 - **Exploratory Analysis:** Useful when the structure of the data is not known a priori.
