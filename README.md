@@ -28,7 +28,7 @@ K-means clustering partitions a dataset into *k* distinct clusters by:
 
 A basic Python implementation demonstrates how to generate clusters from random sample data and visualize the centroids.
 
-### Gaussian Mixture Models (GMM) {cite}bishop2006pattern{cite} {cite}reynolds2009gaussian{cite} {cite}mclachlan2004finite{cite}
+### Gaussian Mixture Models (GMM)
 Gaussian Mixture Models offer a probabilistic approach by assuming that the data is generated from a mixture of several Gaussian distributions. Unlike K-means, GMM provides soft clustering, meaning that each data point is assigned a probability of belonging to each cluster.
 
 **Key Features:**
